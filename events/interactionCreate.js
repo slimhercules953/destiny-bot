@@ -1,4 +1,5 @@
 const client = require("../index");
+const db = require('quick.db');  // Make sure you have quick.db installed
 
 client.on("interactionCreate", async (interaction) => {
     
