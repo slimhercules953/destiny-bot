@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "node": "^22.0.0"
+    "node": "^18.20.5"
   },
   "dependencies": {
     "canvacord": "^5.2.3",
