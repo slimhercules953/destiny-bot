@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "node": "^18.0.0"
+    "node": "^16.9.0"
   },
   "dependencies": {
     "@discordjs/builders": "^0.13.0",
