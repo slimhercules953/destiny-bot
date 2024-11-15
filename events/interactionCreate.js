@@ -1,14 +1,7 @@
 const client = require("../index");
-const db = require('quick.db');  // Make sure you have quick.db installed
 
 client.on("interactionCreate", async (interaction) => {
-    const currentPatchVersion = "1.0.1"; // Update this whenever you release a new patch
-    const userNotifiedPatch = db.get(`userNotified_${interaction.user.id}`) || "0.0.0";
-
-    if (currentPatchVersion !== userNotifiedPatch) {
-        //interaction.channel.send("📢 There's a new patch available for the bot! Please check out our latest patch notes to see what's new. Type /patchnotes to see the patch notes");
-        db.set(`userNotified_${interaction.user.id}`, currentPatchVersion);
-    }    // Slash Command Handling
+    
   
     if (interaction.isCommand()) {
         await interaction.deferReply({ ephemeral: false }).catch(() => {});
