@@ -1,4 +1,4 @@
-const { CommandInteraction, MessageEmbed, MessageActionRow, MessageButton, Modal, TextInputComponent, MessageSelectMenu } = require('discord.js');
+const { CommandInteraction, Client, MessageEmbed, MessageActionRow, MessageButton } = require('discord.js');
 
 const pinnacleData = new Map(); // Temporary in-memory storage for weekly progress
 
